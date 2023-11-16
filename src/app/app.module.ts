@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FilterListComponent } from './components/filter-list/filter-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FilterManagePanelComponent } from './components/filter-manage-panel/filter-manage-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FilterListComponent
+    FilterListComponent,
+    FilterManagePanelComponent
   ],
   imports: [
     BrowserModule,
