@@ -1,0 +1,22 @@
+<table class="table table-striped mt-4">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Name</th>
+    <th scope="col">Criteria names</th>
+    <th scope="col">Selection</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let filter of filters; let index=index">
+    <th scope="row">{{ index }}</th>
+    <td>{{ filter.name }}</td>
+    <td>{{ filter.criteriaNames }}</td>
+    <td>{{ filter.selection }}</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="d-flex justify-content-center align-items-center p-2">
+  <app-modal></app-modal>
+</div>

@@ -1,0 +1,15 @@
+<ng-template #content let-modal>
+    <div class="modal-header bg-info">
+        <h4 class="modal-title text-white" id="modal-basic-title">Filter</h4>
+        <button type="button" class="btn-close btn-close-white" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <app-create-filter></app-create-filter>
+    </div>
+    <div class="modal-footer d-flex justify-content-center align-items-center bg-light p-2 mt-4">
+            <button type="submit" class="btn btn-danger btn-sm px-5 me-5" (click)="modal.dismiss('Cross click')">Close</button>
+            <button type="submit" class="btn btn-primary btn-sm px-5" form="createFilter" (click)="modal.close('Save click')">Save</button>
+    </div>
+</ng-template>
+
+<button class="btn bg-success btn-md text-white px-5 py-1" (click)="open(content)">Add Filter</button>
